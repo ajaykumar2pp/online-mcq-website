@@ -24,4 +24,18 @@ body {
   .card-box:hover{
     box-shadow: rgba(25, 26, 26, 0.2) 0 8px 24px;
 }
- 
+.icon-span{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #687ac4;
+  color: #fff
+}
+.options {
+  padding: 10px;
+  order: 3;
+}
+
+.controls {
+  padding: 10px;
+  order: 4;
+}
