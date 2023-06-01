@@ -51,23 +51,34 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-center mt-4 border border-primary py-2 text-primary border-opacity-75">Quiz Application</h1>
+          <h1 class="text-center mt-4 border border-primary py-2 text-primary border-opacity-75 m-sm-3">Quiz Application
+          </h1>
         </div>
       </div>
     </div>
   </section>
   <!--**************************** Section Questions ************************* -->
-  <section>
-    <div class="container m-md-5 m-sm-4">
+  <section class="mb-5">
+    <div class="container m-md-5 m-sm-5">
       <div class="row justify-content-center ">
-        <div class="col-md-12">
-          <h3>Q.3 Which terminal command is used to remove the directory?</h3>
-          <div class="form-check">
-            <label class="form-check-label" for="flexRadioDefault1">
-              Default radio</label>
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-
+        <div class="col-md-12 ms-md-5 ">
+          <div class="score">
+            <span id="user-score">0</span>
+            <span> / </span>
+            <span id="total-score">0</span>
           </div>
+          <div class="content" id="question-area">
+            <div>
+              <h3 id="question-text"></h3>
+            </div>
+            <div class="options">
+              <button class="btn btn-option d-block input-size" id="option1">True</button>
+              <button class="btn btn-option d-block input-size" id="option2">False</button>
+              <button class="btn btn-option d-block input-size" id="option3">Option 3</button>
+              <button class="btn btn-option d-block input-size" id="option4">Option 4</button>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -78,16 +89,26 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 d-flex justify-content-between">
-          <button class="btn btn-warning  px-5 py-1 mb-3 opacity-75">Prev</button>
-          <button class="btn btn-success  px-5 py-1 mb-3 opacity-75">Next</button>
+          <button class="btn btn-secondary  btn-restart px-4 py-1 mb-3 opacity-75" id="restart"><i class="bi bi-arrow-clockwise"></i>Restart</button>
+          <button class="btn btn-warning btn-prev  px-4 py-1 mb-3 opacity-75" id="prev"><i
+              class="bi bi-chevron-left"></i> Prev</button>
+          <button class="btn btn-success  btn-next px-4 py-1 mb-3 opacity-75" id="next">Next <i
+              class="bi bi-chevron-right"></i></button>
+          <button class="btn btn-primary btn-submit px-4 py-1 mb-3 opacity-75" id="submit">Submit</button>
         </div>
       </div>
     </div>
   </section>
   <!-- *******************************  Navbar End  *************************************** -->
+
+
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+  <script src="./beginner.js"></script>
 </body>
 
 </html>
